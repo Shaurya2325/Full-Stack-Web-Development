@@ -1,0 +1,59 @@
+div{
+    height: 100px;
+    width: 100px;
+   /* border-radius: 50%;*/
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /*transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: steps(5);
+    transition-delay: 1s;*/
+    /*transition: all 2s ease-in 1s;*/
+   /* transform: rotate(45deg);*/
+    /*rotate:x 180deg;*/
+    /*transform: scale(2,1);*/  
+    /*transition: all 2s ease-in 1s;*/
+    /*animation ka liya  upar aala ko hata data ha*/
+    /*animation-name: colorAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+
+animation:colorAnimate 2s ease-in 0s infinite normal;
+
+}
+@keyframes colorAnimate {
+    /*from{ background-color:aquamarine;}
+    to{background-color:red ;}*/
+    0% {
+        left: 0 px;
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+
+    100%{
+        left:200px;
+         background-color: red;
+         color: white;
+       }
+}
+
+   /* div :hover{
+    /*background-color: yellow;*/
+    /*color: white;
+    font-size: 20px;*/
+   /* transform: translate(100px, 80px);*/
+   /* transform: rotate(180deg);*/
+    /*transform: skew(100deg);*/
+   
+/* } */ 
+/*div:active {
+    background-color: pink;
+}*/
